@@ -15,6 +15,8 @@ body {
   width: 100%;
 }
 
+ /* header styles */
+
 .page-header {
   background-color: #ffffff;
   height: 18%;
@@ -102,13 +104,15 @@ body {
   background-color: #14A5FB;
 }
 
+ /* page title styles */
+
 .title-div {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 69.5%;
-  float: right;
+  /*float: right;*/
   justify-content: flex-start;
   width: 86%;
 }
@@ -220,6 +224,8 @@ body {
   border-bottom: 3px solid #3DAFEF;
   font-weight: bold;
 }
+
+/* sidebar styles */
 
 .sidebar {
   align-items: center;
@@ -397,6 +403,8 @@ body {
   width: 86%;
 }
 
+/* graph section styles */
+
 .graph-section {
   align-items: center;
   background-color: #EDF2F6;
@@ -499,8 +507,10 @@ body {
   height: 150px;
   margin-bottom: 100px;
   -webkit-filter: invert(100%);
-  width: 350px;
+  width: 365px;
 }
+
+/* job section styles */
 
 .job-section {
   background-color: #ffffff;
@@ -686,7 +696,21 @@ body {
   width: 25%;
 }
 
+@media screen and (min-width: 1450px) {
+
+  .circle-graphic {
+    height: 205px;
+    width: 205px;
+  }
+
+  .bar-graph {
+    height: 205px;
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 1160px) {
+
   .title-text {
     font-size: 24px;
   }
@@ -719,6 +743,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
   .griffin-label {
     font-size: 12px;
   }
@@ -762,10 +787,29 @@ body {
 
 @media screen and (max-width: 890px) {
 
+  .search-bar {
+    width: 82%;
+  }
+
   .title-div {
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
+    width: 82%;
+  }
+
+  .sidebar {
+    width: 150px;
+  }
+
+  .main-content {
+    width: 82%;
+  }
+
+  .graph-section {
+    border-bottom: none;
+  }
+
+  .graph-right-side {
+    border-bottom: none;
   }
 
   .title-left-side {
@@ -778,44 +822,48 @@ body {
   }
 
   .title-right-side {
-    height: 50%;
+    padding-bottom: 30px;
   }
 
-  .title-text {
-    align-self: center;
-    font-size: 40px;
-    margin-left: 10px;
-    width: 100%;
-  }
-
-  .location-text,
+  /*.location-text,
   .preview-link {
     display: inline-block;
-  }
+    align-self: flex-start;
+  }*/
 
   .preview-link {
     margin-bottom: 40px;
+    margin-left: 15px;
   }
 
-  .tab {
+  .tab-div {
     display: none;
   }
 
-  .graph-right-side {
-    display:none;
-  }
-
   .graph-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 600px;
     width: 100%;
   }
 
   .graph-left-side {
+    height: 300px;
+    margin-left: 155px;
+    width: 100%;
+  }
+
+  .graph-right-side {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
     width: 100%;
   }
 
   .circle-graphic {
-    height: 125px;
-    width: 125px;
+    height: 110px;
+    width: 110px;
   }
 
   .griffin {
@@ -827,17 +875,103 @@ body {
     font-size: 10px;
   }
 
+  .facebook-text,
+  .twitter-text,
+  .linkedin-text {
+    display: none;
+  }
 
+  .share-card {
+    height: 200px;
+    padding-bottom: 10px;
+  }
 
+  .facebook,
+  .twitter,
+  .linkedin {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-icon {
+    margin: 0px;
+  }
+
+  .social-section {
+    align-items: center;
+    justify-content: center;
+  }
+
+  aside .table-icon {
+    margin-right: 5px;
+  }
 }
 
+@media screen and (max-width: 790px) {
 
-/*.search-input {
-  display: none;
+  .sidebar {
+    display: none;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .title-text {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .title-div {
+    display: flex;
+    justify-content: center;
+  }
+  .preview-link,
+  .location-text {
+    display: inline;
+    width: 30%;
+  }
+
+  .title-left-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .graph-section {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
-.dots-div,
-.movie-div,
-.friend-div {
-  display: none;
-}*/
+@media screen and (max-width: 690px) {
+
+  .circle-graphic {
+    height: 90px;
+    width: 90px;
+  }
+  .social-section {
+    display: none;
+  }
+
+  .job-table {
+    width: 600px;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .title-right-side {
+    display: none;
+  }
+
+  .location-text,
+  .preview-link {
+    display: none;
+  }
+}
