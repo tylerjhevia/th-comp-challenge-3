@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>TH Static Comp 3</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+  </head>
+ <body>
+    <aside class="sidebar">
+      <div class='profile-pic'>
+        <img class='griffin' src='assets/griffin-mcelroy.jpg' alt='face of Griffin McElroy'/>
+        <p class='griffin-label'>Griffin McElroy<img class='down-arrow' src='assets/down-arrow.svg' alt='down arrow'/></p>
+      </div>
+
+      <menu class='main-table-div'>
+        <table class='main-table'>
+          <tr>
+            <th class='main-table-header table-header'>Main</th>
+          </tr>
+          <tr>
+            <td><img class='home table-icon' src='assets/home-icon.svg' alt='house'/></td>
+            <td><p class='table-label'>HOME</p></td>
+          </tr>
+          <tr>
+            <td><img class='jobs table-icon' src='assets/briefcase-icon.svg' alt='briefcase'/></td>
+            <td><p class='table-label'>JOBS</p></td>
+          </tr>
+          <tr>
+            <td><img class='resume table-icon' src='assets/resume-icon.svg' alt='resume'/></td>
+            <td><p class='table-label'>RESUMES</p></td>
+          </tr>
+          <tr>
+            <td><img class='tasks table-icon' src='assets/tasks-icon.svg' alt='clipboard'/></td>
+            <td><p class='table-label'>TASKS</p>
+          </tr>
+          <tr>
+            <td><img class='calendar table-icon' src='assets/calendar-icon.svg' alt='calendar'/></td>
+            <td><p class='table-label'>CALENDAR</p></td>
+        </table>
+      </menu>
+
+      <menu class='admin-table-div'>
+        <table class='admin-table'>
+          <tr>
+            <th class='admin-table-header table-header'>Admin</th>
+          </tr>
+          <tr>
+            <td><img class='users table-icon' src='assets/users-icon.svg' alt='business woman'/></td>
+            <td><p class='table-label'>USERS</p></td>
+          </tr>
+          <tr>
+            <td><img class='location table-icon' src='assets/pin-icon.svg' alt='map pin'/></td>
+            <td><p class='table-label'>LOCATION</p></td>
+          </tr>
+          <tr>
+            <td><img class='workflows table-icon' src='assets/workflow-icon.svg' alt='workflow diagram'/></td>
+            <td><p class='table-label'>WORKFLOWS</p></td>
+          </tr>
+          <tr>
+            <td><img class='job-boards table-icon' src='assets/job-boards-icon.svg' alt='folded newspaper'/></td>
+            <td><p class='table-label'>JOB BOARDS</p></td>
+          </tr>
+          <tr>
+            <td><img class='social table-icon' src='assets/social-icon.svg' alt='social bubbles'/></td>
+            <td><p class='table-label'>SOCIAL</p></td>
+          </tr>
+        </table>
+      </menu>
+
+        <menu class='categories-table-div'>
+          <table class='categories-table'>
+            <tr>
+              <th class='categories-table-header table-header'>Categories <img class='categories-dropdown' src='assets/down-arrow.svg' alt='down arrow'/></th>
+            </tr>
+            <tr>
+              <td class='category-row'><input class='category administrative-box' type='checkbox' name='category'>Administrative</td>
+            </tr>
+            <tr>
+              <td class='category-row'><input class='category design-box' type='checkbox' name='category'>Design</td>
+            </tr>
+            <tr>
+              <td class='category-row'><input class='category executive-box' type='checkbox' name='category'>Executive</td>
+            </tr>
+            <tr>
+              <td class='category-row'><input class='category human-resources-box' type='checkbox' name='category'>Human Resources</td>
+            </tr>
+          </table>
+        </menu>
+
+
+        </table>
+      </menu>
+    </aside>
+
+    <header class="page-header">
+
+       <div class="search-bar">
+        <div class="dropdown-div">
+          <img class="dropdown-icon" src="assets/dropdown-icon.svg" alt="dropdown menu icon"/>
+        </div>
+        <input class="search-input" placeholder="Search for a job, task, or resume"/>
+        <div class="friend-div">
+          <img class="friend-icon" src="assets/add-friend-icon.svg" alt="add friend icon"/>
+        </div>
+        <div class ="movie-div">
+          <img class="movie-icon" src="assets/movie-icon.svg" alt="movie icon"/>
+        </div>
+        <div class = "dots-div">
+          <img class="dots-icon" src="assets/dots-icon.svg" alt="dots icon"/>
+        </div>
+      </div>
+
+       <div class="title-div">
+
+        <div class="title-left-side">
+          <p class="title-text" role="heading">Customer Service Representative</p>
+          <p class="location-text"><img class="pin-icon" src="assets/location-icon.svg" alt="pin icon"/> San Francisco, CA -</p>
+          <a class="preview-link" href="https://en.wikipedia.org/wiki/San_Francisco" target="_blank">Preview this post</a>
+        </div>
+
+        <div class="title-right-side">
+          <button class='open-button'><div class='green-circle'></div> OPEN</button>
+          <img class='banner-icon title-icon' src='assets/banner-icon.svg' alt='banner/flag'/>
+          <img class='pencil-icon title-icon' src='assets/pencil-icon.svg' alt='pencil'/>
+          <img class='garbage-icon title-icon' src='assets/garbage-icon.svg' alt='garbage can'/>
+        </div>
+
+        <div class="tab-div">
+          <p class="summary tab">SUMMARY</p>
+          <p class="applicants tab">APPLICANTS</p>
+          <p class="job-board tab">JOB BOARD</p>
+          <p class="interviews tab">INTERVIEWS</p>
+          <p class="activity tab">ACTIVITY</p>
+          <p class="broadcast tab">BROADCAST</p>
+          <p class="notifications tab">NOTIFICATIONS</p>
+        </div>
+
+
+
+      </div>
+
+    </header>
+
+    <main class="main-content">
+
+      <section class='graph-section'>
+         <section class='graph-left-side'>
+          <article class='applicant-graphic circle-graphic'>
+            <p class='circle-graphic-number'>3,154</p>
+            <p class='circle-graphic-label'>APPLICANTS</p>
+          </article>
+          <article class='interview-graphic circle-graphic'>
+            <p class='circle-graphic-number'>1,546</p>
+            <p class='circle-graphic-label'>INTERVIEWS</p>
+          </article>
+          <article class='forward-graphic circle-graphic'>
+            <p class='circle-graphic-number'>912</p>
+            <p class='circle-graphic-label'>FORWARDS</p>
+          </article>
+          <button class='totals-button'>TOTALS - Out of 5,231 views</button>
+        </section>
+        <section class='graph-right-side'>
+          <img class='bar-graph' src='assets/bar-graph.svg' alt='bar graph'/>
+          <button class='applicants-per-day-button'>APPLICANTS/DAY</button>
+        </section>
+      </section>
+
+      <section class="job-section">
+        <table class='job-table'>
+          <tr>
+            <th>JOB DESCRIPTION</th>
+            <th><button class='edit-button'><img class='table-edit-icon' src='assets/pencil-icon.svg' alt='little pencil'/>EDIT</button></th>
+          </tr>
+          <tr>
+            <td>POSITION TITLE</td>
+            <td>Customer Service Representative</td>
+          </tr>
+          <tr>
+            <td>LOCATION</td>
+            <td>San Francisco, CA</td>
+          </tr>
+          <tr>
+            <td>EMPLOYMENT</td>
+            <td>Full-time</td>
+          </tr>
+          <tr>
+            <td>EXPERIENCE</td>
+            <td>Mid-level</td>
+          </tr>
+          <tr>
+            <td>STATUS</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>DESCRIPTION</td>
+            <td>Donec ut diam ut nulla lobortis pulvinar. Maecenas rutrum tempus erat, ac lacinia enim porta egestas. Donec accumsan convallis tellus, sollicitudin molestie quam hendrerit in. Cras fermentum erat leo, at placerat magna egestas et. Aliquam pellentesque dui quis ligula commodo, vel egestas est rutrum. Morbi nec lacus ac eros vulputate iaculis quis nec tortor. Aliquam erat volutpat. Praesent sed consequat nisl. Suspendisse euismod diam vel tortor hendrerit, et rhoncus sem. rhoncus.</td>
+          </tr>
+          <tr>
+            <td>HIRING LEAD</td>
+            <td class='lebron-row'><img class='lebron' src='assets/lebron.jpg' alt='LeBron James headshot'/> LeBron James</td>
+          </tr>
+          <tr class='last-row'>
+            <td>Approved Salary</td>
+            <td>$75,000</td>
+            <hr/>
+        </table>
+      </section>
+
+      <section class="social-section">
+        <article class='facebook social'>
+          <img class='social-icon' src='assets/facebook-icon.svg' alt='facebook f'/>
+          <p class='facebook-text'>Post to Facebook</p>
+        </article>
+        <article class='twitter social'>
+          <img class='social-icon' src='assets/twitter-icon.svg' alt='twitter bird icon'/>
+          <p class='twitter-text'>Tweet this Job</p>
+        </article>
+        <article class='linkedin social'>
+          <img class='social-icon' src='assets/linkedin-icon.svg' alt='linked in logo'/>
+          <p class='linkedin-text'>Post to Linkedin</p>
+        </article>
+        <article class='share-card'>
+          <h2 class='link-job' role='heading'><img class='globe-icon' src='assets/globe-icon.svg' alt='black globe icon'/>Link to this Job</h2>
+          <p class='link-job-blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <input class='link-job-input' placeholder='http://site.net'/><button class='link-job-button'>Copy</button>
+        </article>
+        <article class='share-card'>
+          <h2 class='use-widget' role='heading'><img class='widget-icon' src='assets/widget-icon.svg' alt='calculator icon'/>Use the Button Widget</h2>
+          <p class='use-widget-blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <input class='use-widget-input' placeholder='http://site.net'/><button class='use-widget-button'>Copy</button>
+        </article>
+        <article class='share-card'>
+          <h2 class='upload-resume' role='heading'><img class='cursor-icon' src='assets/cursor-icon.svg' alt='mouse cursor'/>Upload Resumes by Email</h2>
+          <p class='upload-resume-blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <input class='upload-resume-input' placeholder='Enter your email'/>
+        </article>
+
+
+      </section>
+    </main>
+  </body>
+</html>
