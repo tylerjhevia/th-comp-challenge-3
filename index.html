@@ -14,6 +14,7 @@
         <img class='griffin' src='assets/griffin-mcelroy.jpg' alt='face of Griffin McElroy'/>
         <p class='griffin-label'>Griffin McElroy<img class='down-arrow' src='assets/down-arrow.svg' alt='down arrow'/></p>
       </div>
+
       <menu class='main-table-div'>
         <table class='main-table' aria-label='link menu'>
           <tr>
@@ -40,6 +41,7 @@
             <td><p class='table-label'>CALENDAR</p></td>
         </table>
       </menu>
+
       <menu class='admin-table-div' aria-label='link menu'>
         <table class='admin-table'>
           <tr>
@@ -61,12 +63,13 @@
             <td><img class='job-boards table-icon' src='assets/job-boards-icon.svg' alt='folded newspaper'/></td>
             <td><p class='table-label'>JOB BOARDS</p></td>
           </tr>
-          <tr>
+          <tr class='social-row'>
             <td><img class='social table-icon' src='assets/social-icon.svg' alt='social bubbles'/></td>
-            <td><p class='table-label'>SOCIAL</p></td>
+            <td><p class='table-label social-label'>SOCIAL</p></td>
           </tr>
         </table>
       </menu>
+
       <menu class='categories-table-div' aria-label='checkboxes'>
         <table class='categories-table'>
           <tr>
@@ -82,7 +85,7 @@
             <td class='category-row'><input class='category executive-box' type='checkbox' name='category'>Executive</td>
           </tr>
           <tr>
-            <td class='category-row'><input class='category human-resources-box' type='checkbox' name='category'>Human Resources</td>
+            <td class='category-row'><input class='category human-resources-box' type='checkbox' name='category'>Humans</td>
           </tr>
         </table>
       </menu>
@@ -136,16 +139,19 @@
             <p class='circle-graphic-number'>3,154</p>
             <p class='circle-graphic-label'>APPLICANTS</p>
           </article>
+
           <article  class='interview-graphic circle-graphic' aria-label='graphic'>
             <p class='circle-graphic-number'>1,546</p>
             <p class='circle-graphic-label'>INTERVIEWS</p>
           </article>
+
           <article class='forward-graphic circle-graphic' aria-label='graphic'>
             <p class='circle-graphic-number'>912</p>
             <p class='circle-graphic-label'>FORWARDS</p>
           </article>
           <button class='totals-button'>TOTALS - Out of 5,231 views</button>
         </section>
+
         <section class='graph-right-side'>
           <img aria-label='graph' class='bar-graph' src='assets/bar-graph.svg' alt='bar graph'/>
           <button class='applicants-per-day-button'>APPLICANTS/DAY</button>
@@ -198,24 +204,29 @@
           <img class='social-icon' src='assets/facebook-icon.svg' alt='facebook f'/>
           <p class='facebook-text'>Post to Facebook</p>
         </article>
+
         <article class='twitter social'>
           <img class='social-icon' src='assets/twitter-icon.svg' alt='twitter bird icon'/>
           <p class='twitter-text'>Tweet this Job</p>
         </article>
+
         <article class='linkedin social'>
           <img class='social-icon' src='assets/linkedin-icon.svg' alt='linked in logo'/>
           <p class='linkedin-text'>Post to Linkedin</p>
         </article>
-        <article class='share-card' aria-label='job link'>
+
+        <article class='share-card link-job-card' aria-label='job link'>
           <h2 class='link-job' role='heading'><img class='globe-icon' src='assets/globe-icon.svg' alt='black globe icon'/>Link to this Job</h2>
           <p class='link-job-blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           <input class='link-job-input' placeholder='http://site.net'/><button class='link-job-button'>Copy</button>
         </article>
+
         <article class='share-card' aria-label='embed widget'>
           <h2 class='use-widget' role='heading'><img class='widget-icon' src='assets/widget-icon.svg' alt='calculator icon'/>Use the Button Widget</h2>
           <p class='use-widget-blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           <input class='use-widget-input' placeholder='http://site.net'/><button class='use-widget-button'>Copy</button>
         </article>
+
         <article class='share-card' aria-label='upload resume input'>
           <h2 class='upload-resume' role='heading'><img class='cursor-icon' src='assets/cursor-icon.svg' alt='mouse cursor'/>Upload Resumes by Email</h2>
           <p class='upload-resume-blurb'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>

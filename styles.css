@@ -77,6 +77,18 @@ body {
   width: 9.5%;
 }
 
+.dots-div:hover,
+.movie-div:hover,
+.friend-div:hover {
+  background-color: #14A5FB;
+}
+
+.dots-icon:hover,
+.friend-icon:hover,
+.movie-icon:hover {
+  -webkit-filter: invert(100%);
+}
+
 .friend-icon {
   height: 100%;
   width: 30px;
@@ -90,18 +102,6 @@ body {
 .dots-icon {
   height: 100%;
   width: 30px;
-}
-
-.dots-icon:hover,
-.friend-icon:hover,
-.movie-icon:hover {
-  -webkit-filter: invert(100%);
-}
-
-.dots-div:hover,
-.movie-div:hover,
-.friend-div:hover {
-  background-color: #14A5FB;
 }
 
  /* page title styles */
@@ -788,7 +788,21 @@ body {
 @media screen and (max-width: 890px) {
 
   .search-bar {
+    height: 20%;
     width: 82%;
+  }
+
+  .search-input::-webkit-input-placeholder {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+
+  .movie-icon,
+  .dropdown-icon,
+  .friend-icon,
+  .dots-icon {
+    height: 25px;
+    width: 25px;
   }
 
   .title-div {
@@ -825,11 +839,12 @@ body {
     padding-bottom: 30px;
   }
 
-  /*.location-text,
+  .location-text,
   .preview-link {
+    align-self: center;
     display: inline-block;
-    align-self: flex-start;
-  }*/
+    margin-right: 15px;
+  }
 
   .preview-link {
     margin-bottom: 40px;
@@ -850,7 +865,8 @@ body {
 
   .graph-left-side {
     height: 300px;
-    margin-left: 155px;
+    margin-left: 220px;
+    margin-right: -20px;
     width: 100%;
   }
 
@@ -858,6 +874,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 300px;
+    margin-left: 100px;
+    margin-top: 0px;
     width: 100%;
   }
 
@@ -907,71 +925,150 @@ body {
   aside .table-icon {
     margin-right: 5px;
   }
+
+  .categories-table {
+    margin-top: 0px;
+  }
+
+  .categories-table td {
+    font-size: 12px;
+  }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 840px) {
+  .search-bar {
+    display: none;
+  }
 
   .sidebar {
-    display: none;
-  }
-
-  .search-bar {
-    width: 100%;
-  }
-
-  .title-text {
-    text-align: center;
-    font-size: 30px;
-  }
-
-  .title-div {
-    display: flex;
-    justify-content: center;
-  }
-  .preview-link,
-  .location-text {
-    display: inline;
-    width: 30%;
-  }
-
-  .title-left-side {
-    display: flex;
+    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 30vh;
+    justify-content: flex-start;
+    width: 100%;
   }
 
-  .graph-section {
-    align-items: center;
+  .profile-pic,
+  .main-table-div,
+  .admin-table-div {
+    border-bottom: none;
+  }
+
+  .admin-table,
+  .main-table {
+    margin-top: 0px;
+  }
+
+  .sidebar .table-icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .sidebar .table-label {
+    display: block;
+  }
+
+  .griffin {
+    height: 75px;
+    width: 75px;
+  }
+
+  .griffin-label {
+    font-size: 12px;
+  }
+
+  .graph-left-side {
+    margin-bottom: 10px;
+  }
+
+  .social-section {
+    display: block;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 60%;
+  }
+
+  .link-job-card {
+    padding-bottom: -10px;
+  }
+
+  .main-content {
     justify-content: center;
-    width: 100%;
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 675px) {
+  .griffin,
+  .griffin-label {
+    display: none;
+  }
+
+  .sidebar {
+    padding-right: 50px;
+  }
+
+  .sidebar table {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .categories-table {
+    display: none;
+  }
+
+  .sidebar {
+    padding-left: 30px;
+  }
 
   .circle-graphic {
-    height: 90px;
-    width: 90px;
+    height: 75px;
+    width: 75px;
   }
-  .social-section {
-    display: none;
+
+  .circle-graphic-number {
+    font-size: 18px;
+  }
+
+  .circle-graphic-label {
+    font-size: 6px;
   }
 
   .job-table {
-    width: 600px;
+    margin-left: -45px;
   }
 
-  .search-input {
-    display: none;
+  .title-text {
+    font-size: 16px;
   }
 
-  .title-right-side {
-    display: none;
+  .totals-button,
+  .applicants-per-day-button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+
+  .sidebar {
+    justify-content: space-around;
   }
 
-  .location-text,
-  .preview-link {
-    display: none;
+  .graph-right-side {
+    margin-bottom: 40px;
+  }
+
+  .main-table {
+    padding-left: 0px;
+  }
+
+  .job-table {
+    padding-right: 30px;
+  }
+
+  .main-table-div,
+  .admint-table-div {
+    display: flex;
+    justify-content: center;
   }
 }
