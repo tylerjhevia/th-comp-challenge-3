@@ -1119,18 +1119,6 @@ body {
   }
 }
 
-/*@media (max-width: 675px) {
-
-  .griffin,
-  .griffin-dropdown {
-    display: none;
-  }
-
-  .griffin-label {
-    display: inline-block;
-    margin-top: 0;
-  }
-}*/
 
 @media (max-width: 560px) {
 
@@ -1204,6 +1192,11 @@ body {
 
 @media (max-width: 416px) {
 
+  .categories-table {
+    margin-bottom: 2px;
+    margin-right: 50px;
+  }
+
   .table-header {
     font-size: 12px;
   }
@@ -1226,6 +1219,10 @@ body {
     width: 75px;
   }
 
+  .graph-section {
+    padding-right: 15px;
+  }
+
   .graph-right-side {
     margin-bottom: 40px;
   }
@@ -1234,8 +1231,12 @@ body {
     padding-left: 0px;
   }
 
+  .job-section {
+    padding-left: 20px;
+  }
+
   .job-table {
-    padding-right: 30px;
+    padding-right: 50px;
   }
 
   .main-table-div,
@@ -1247,13 +1248,9 @@ body {
 
 @media (max-width: 330px) {
 
-  .categories-table {
-    margin-bottom: 1px;
-  }
-
   .circle-graphic {
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
   }
 
   .circle-graphic-number {
@@ -1261,6 +1258,6 @@ body {
   }
 
   .circle-graphic-label {
-    font-size: 6px;
+    font-size: 5px;
   }
 }
