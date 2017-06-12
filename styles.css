@@ -255,6 +255,10 @@ body {
   width: 80px;
 }
 
+.griffin-dropdown {
+  display: none;
+}
+
 .griffin-label {
   font-size: 15px;
   margin-top: 10px;
@@ -292,6 +296,11 @@ body {
   color: white;
   margin-top: 20px;
   width: 60%;
+}
+
+.main-table-header-dropdown,
+.admin-table-header-dropdown {
+  display: none;
 }
 
 .table-header {
@@ -525,17 +534,20 @@ body {
   width: 100%;
 }
 
-.job-table th {
+.job-table td {
+  background-color: #ffffff;
+  border-bottom: 1px solid gray;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+#job-table-header,
+#job-table-header-row {
   background-color: #6F7E95;
   color: white;
   width: 130px;
 }
 
-.job-table td {
-  background-color: #ffffff;
-  border-bottom: 1px solid gray;
-  padding-left: 30px;
-}
 
 .last-row td {
   border-bottom: none;
@@ -637,6 +649,12 @@ body {
   padding-right: 30px;
 }
 
+.facebook:hover,
+.twitter:hover,
+.linkedin:hover {
+  cursor: pointer;
+}
+
 .share-card {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -696,7 +714,7 @@ body {
   width: 25%;
 }
 
-@media screen and (min-width: 1450px) {
+@media (min-width: 1450px) {
 
   .circle-graphic {
     height: 205px;
@@ -709,7 +727,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1160px) {
+@media (max-width: 1160px) {
 
   .title-text {
     font-size: 24px;
@@ -742,7 +760,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 
   .griffin-label {
     font-size: 12px;
@@ -785,7 +803,11 @@ body {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media (max-width: 890px) {
+
+  html,body {
+    overflow-x: hidden;
+  }
 
   .search-bar {
     height: 20%;
@@ -884,9 +906,14 @@ body {
     width: 110px;
   }
 
+  .bar-graph {
+    height: 200px;
+    width: 400px;
+  }
+
   .griffin {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
   }
 
   .griffin-label {
@@ -935,15 +962,17 @@ body {
   }
 }
 
-@media screen and (max-width: 840px) {
+@media (max-width: 840px) {
+
   .search-bar {
     display: none;
   }
 
   .sidebar {
-    align-items: flex-start;
+    align-items: center;
+    display: flex;
     flex-direction: row;
-    height: 30vh;
+    height: 60px;
     justify-content: flex-start;
     width: 100%;
   }
@@ -954,38 +983,122 @@ body {
     border-bottom: none;
   }
 
-  .admin-table,
-  .main-table {
-    margin-top: 0px;
+  .categories-table {
+    margin: 0px;
+    padding: 0px;
   }
 
-  .sidebar .table-icon {
+  .categories-dropdown,
+  .admin-table-header-dropdown,
+  .main-table-header-dropdown {
+    display: inline-block;
     height: 15px;
+    padding-left: 5px;
+    -webkit-filter: invert(100%);
     width: 15px;
   }
 
-  .sidebar .table-label {
-    display: block;
+
+  .admin-table td,
+  .main-table td,
+  .categories-table td {
+    display: none;
+  }
+
+  .categories-table-div,
+  .categories-table,
+  .admin-table,
+  .admin-table-div,
+  .main-table,
+  .main-table-div {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-table-div,
+  .admin-table-div,
+  .categories-table-div {
+    padding-top: 10px;
+  }
+
+  .categories-table-header,
+  .main-table-header,
+  .admin-table-header {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile-pic {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0;
   }
 
   .griffin {
-    height: 75px;
-    width: 75px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+  }
+
+  .griffin-dropdown {
+    align-self: flex-end;
+    display: inline;
+    height: 15px;
+    -webkit-filter: invert(100%);
+    width: 15px;
   }
 
   .griffin-label {
-    font-size: 12px;
+    display: none;
+  }
+
+  .title-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .title-left-side {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
+    width: 100%;
+  }
+
+  .title-right-side {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .graph-left-side {
     margin-bottom: 10px;
+    width: 100%;
   }
 
   .social-section {
     display: block;
-    margin-left: 40px;
+    margin-left: 0;
     margin-top: 30px;
     width: 60%;
+  }
+
+  .linkedin {
+    margin-bottom: 50px;
   }
 
   .link-job-card {
@@ -994,36 +1107,46 @@ body {
 
   .main-content {
     justify-content: center;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 675px) {
+
+@media (max-width: 725px) {
+
+  .job-section {
+    width: 90%;
+  }
+}
+
+/*@media (max-width: 675px) {
+
   .griffin,
+  .griffin-dropdown {
+    display: none;
+  }
+
   .griffin-label {
-    display: none;
+    display: inline-block;
+    margin-top: 0;
+  }
+}*/
+
+@media (max-width: 560px) {
+
+  .open-button {
+    font-size: 0px;
   }
 
-  .sidebar {
-    padding-right: 50px;
-  }
-
-  .sidebar table {
-    width: 100px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .categories-table {
-    display: none;
-  }
-
-  .sidebar {
-    padding-left: 30px;
+  .green-circle {
+    height: 15px;
+    margin-right: 3px;
+    width: 15px;
   }
 
   .circle-graphic {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
   }
 
   .circle-graphic-number {
@@ -1034,8 +1157,8 @@ body {
     font-size: 6px;
   }
 
-  .job-table {
-    margin-left: -45px;
+  .bar-graph {
+    width: 75%;
   }
 
   .title-text {
@@ -1048,10 +1171,59 @@ body {
   }
 }
 
-@media screen and (max-width: 416px) {
+@media (max-width: 500px) {
+
+  .job-section {
+    width: 300px;
+  }
+
+  .job-table {
+    margin-left: -70px;
+    font-size: 8px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 460px) {
+
+  .job-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .job-table {
+    margin: none;
+    padding: none;
+    table-layout: fixed;
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 416px) {
+
+  .table-header {
+    font-size: 12px;
+  }
+
+  .griffin-label {
+    font-size: 10px;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
 
   .sidebar {
     justify-content: space-around;
+  }
+
+  .circle-graphic {
+    height: 75px;
+    width: 75px;
   }
 
   .graph-right-side {
@@ -1070,5 +1242,25 @@ body {
   .admint-table-div {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 330px) {
+
+  .categories-table {
+    margin-bottom: 1px;
+  }
+
+  .circle-graphic {
+    height: 65px;
+    width: 65px;
+  }
+
+  .circle-graphic-number {
+    font-size: 12px;
+  }
+
+  .circle-graphic-label {
+    font-size: 6px;
   }
 }

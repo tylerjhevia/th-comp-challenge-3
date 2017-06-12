@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8'/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>TH Static Comp 3</title>
     <link href='normalize.css' rel='stylesheet' type='text/css'/>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -11,14 +11,14 @@
  <body>
     <aside class='sidebar' aria-label='sidebar'>
       <div class='profile-pic'>
-        <img class='griffin' src='assets/griffin-mcelroy.jpg' alt='face of Griffin McElroy'/>
+        <img class='griffin' src='assets/griffin-mcelroy.jpg' alt='face of Griffin McElroy'/><img class='griffin-dropdown' src='assets/down-arrow.svg' alt='down arrow'/>
         <p class='griffin-label'>Griffin McElroy<img class='down-arrow' src='assets/down-arrow.svg' alt='down arrow'/></p>
       </div>
 
       <menu class='main-table-div'>
         <table class='main-table' aria-label='link menu'>
           <tr>
-            <th class='main-table-header table-header'>Main</th>
+            <th class='main-table-header table-header'>Main <img class='main-table-header-dropdown' src='assets/down-arrow.svg'</th>
           </tr>
           <tr>
             <td><img class='home table-icon' src='assets/home-icon.svg' alt='house'/></td>
@@ -45,7 +45,7 @@
       <menu class='admin-table-div' aria-label='link menu'>
         <table class='admin-table'>
           <tr>
-            <th class='admin-table-header table-header'>Admin</th>
+            <th class='admin-table-header table-header'>Admin <img class='admin-table-header-dropdown' src='assets/down-arrow.svg'</th>
           </tr>
           <tr>
             <td><img class='users table-icon' src='assets/users-icon.svg' alt='business woman'/></td>
@@ -160,9 +160,9 @@
 
       <section class='job-section'>
         <table class='job-table' aria-label='chart'>
-          <tr>
-            <th>JOB DESCRIPTION</th>
-            <th><button class='edit-button' aria-label='edit button'><img class='table-edit-icon' src='assets/pencil-icon.svg' alt='little pencil'/>EDIT</button></th>
+          <tr id='job-table-header-row'>
+            <td id='job-table-header'>JOB DESCRIPTION</td>
+            <td id='job-table-header'><button class='edit-button' aria-label='edit button'><img class='table-edit-icon' src='assets/pencil-icon.svg' alt='little pencil'/>EDIT</button></td>
           </tr>
           <tr>
             <td>POSITION TITLE</td>
